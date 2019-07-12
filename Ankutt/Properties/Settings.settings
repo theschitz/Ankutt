@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Ankutt.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MinSleepTimeMinutes" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="MaxSleepTimeMinutes" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">120</Value>
+    </Setting>
+    <Setting Name="LogFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Ankutt.log</Value>
+    </Setting>
+    <Setting Name="UrlFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">urls.txt</Value>
+    </Setting>
+    <Setting Name="GoogleSearchStrings" Type="System.String" Scope="User">
+      <Value Profile="(Default)">google_this.txt</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

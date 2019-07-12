@@ -1,0 +1,9 @@
+﻿#
+# Put new urls on new lines.
+#
+https://www.google.com/search?q=Bill+gates
+https://www.transportstyrelsen.se
+https://youtu.be/EwTZ2xpQwpA
+https://www.kjell.com
+https://youtu.be/me4E2LmqN_M
+https://youtu.be/q4OItmKWFKw
