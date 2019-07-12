@@ -18,21 +18,23 @@ namespace Ankutt
 #pragma warning restore IDE1006 // Naming Styles
         public static void PlayRandomWavFile()
         {
-            switch(GetRandomNumber(4))
-            {
-                case 0:
-                    PlayWavFile(WavFiles.Tralalala);
-                    break;
-                case 1:
-                    PlayWavFile(WavFiles.BoKo1);
-                    break;
-                case 2:
-                    PlayWavFile(WavFiles.BoKo2);
-                    break;
-                case 3:
-                    PlayWavFile(WavFiles.BoKo3);
-                    break;
-            }
+            WavFiles wavFiles = new WavFiles();
+            PlayWavFile(wavFiles.fileList[GetRandomNumber(wavFiles.fileList.Count)]);
+            //switch (GetRandomNumber(4))
+            //{
+            //    case 0:
+            //        PlayWavFile(WavFiles.Tralalala);
+            //        break;
+            //    case 1:
+            //        PlayWavFile(WavFiles.BoKo1);
+            //        break;
+            //    case 2:
+            //        PlayWavFile(WavFiles.BoKo2);
+            //        break;
+            //    case 3:
+            //        PlayWavFile(WavFiles.BoKo3);
+            //        break;
+            //}
         }
         private static void PlayWavFile(string soundFilePath)
         {
