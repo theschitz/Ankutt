@@ -1,0 +1,10 @@
+﻿#
+# Add new lines for more error messages. Title and message separated by semi colon as seen below.
+#
+# Example: message-text;title-text
+#
+Could not format C:\. Please try again;Format Error
+The domain Efukt.com was blocked by the firewall due to network policy.;Cisco Firewall
+Mother modem could not process instructions: 0x0002 0xAD 0xAF 0x0001";Internal Error
+Please insert disc.;CD-Rom
+Floppy drive is empty.;A:\
