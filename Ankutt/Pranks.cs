@@ -56,30 +56,12 @@ namespace Ankutt
         }
         public static void RandomErrorMessage()
         {
-            switch(GetRandomNumber(5))
-            {
-                case 0:
-                    ShowErrorMessage("Kunde inte formatera C:\\. Vänligen försök igen", "Format Error");
-                    break;
-                case 1:
-                    ShowErrorMessage("The domain Efukt.com was blocked by the firewall due to network policy.", "Cisco Firewall");
-                    break;
-                case 2:
-                    ShowErrorMessage("Mother modem could not process instructions: 0x0002 0xAD 0xAF 0x0001", "Internal Error");
-                    break;
-                case 3:
-                    ShowErrorMessage("Please insert disc.", "CD-Rom");
-                    break;
-                case 4:
-                    ShowErrorMessage("Floppy drive is empty.", "A:\\");
-                    break;
-                default:
-                    ShowErrorMessage();
-                    break;
-            }
+            string[] errorMessages = Program.GetTextFileLines(Properties.Settings.Default.ErrorMessageFilePath);
+            string[] error = errorMessages[GetRandomNumber(errorMessages.Length)].Split(';');
+            ShowErrorMessage(error[0], error[1]);
         }
 
-        public static void ShowErrorMessage(string message="Ett väntat felet inträffades.", string title="Fel")
+        public static void ShowErrorMessage(string message="An expected error occured.", string title="Error")
         {
             MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }      
@@ -104,8 +86,7 @@ namespace Ankutt
             for (int i = 0; i < 50; i++)
             {
                 int x = GetRandomNumber(min: 50, max: 100);
-                int m = GetRandomNumber(100) % 2;
-                if (m == 0)
+                if (GetRandomNumber(100) % 2 == 0)
                 {
                     Cursor.Position = new Point(Cursor.Position.X + x, Cursor.Position.Y + 10);
                 }
@@ -143,8 +124,7 @@ namespace Ankutt
         }
         public static void GoogleThis(string searchText)
         {
-            string url = "https://www.google.com/search?q=" + searchText;
-            OpenWebBrowser(url);
+            OpenWebBrowser($"https://www.google.com/search?q={searchText}");
         }
         public static int GetRandomNumber(int max, int min = 0)
         {

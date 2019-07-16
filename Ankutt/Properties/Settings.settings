@@ -12,10 +12,13 @@
       <Value Profile="(Default)">Ankutt.log</Value>
     </Setting>
     <Setting Name="UrlFilePath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">urls.txt</Value>
+      <Value Profile="(Default)">resources\lists\urls.txt</Value>
     </Setting>
     <Setting Name="GoogleSearchStrings" Type="System.String" Scope="User">
-      <Value Profile="(Default)">google_this.txt</Value>
+      <Value Profile="(Default)">resources\lists\google_this.txt</Value>
+    </Setting>
+    <Setting Name="ErrorMessageFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">resources\lists\error_messages.txt</Value>
     </Setting>
   </Settings>
 </SettingsFile>

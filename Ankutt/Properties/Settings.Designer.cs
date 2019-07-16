@@ -61,7 +61,7 @@ namespace Ankutt.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("urls.txt")]
+        [global::System.Configuration.DefaultSettingValueAttribute("resources\\lists\\urls.txt")]
         public string UrlFilePath {
             get {
                 return ((string)(this["UrlFilePath"]));
@@ -73,13 +73,25 @@ namespace Ankutt.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("google_this.txt")]
+        [global::System.Configuration.DefaultSettingValueAttribute("resources\\lists\\google_this.txt")]
         public string GoogleSearchStrings {
             get {
                 return ((string)(this["GoogleSearchStrings"]));
             }
             set {
                 this["GoogleSearchStrings"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("resources\\lists\\error_messages.txt")]
+        public string ErrorMessageFilePath {
+            get {
+                return ((string)(this["ErrorMessageFilePath"]));
+            }
+            set {
+                this["ErrorMessageFilePath"] = value;
             }
         }
     }
